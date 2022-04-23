@@ -1,0 +1,168 @@
+    html {
+        width: 100%; height: 100%;
+    }
+
+    body {
+        margin: 0 auto; padding: 0;
+        font-family: 'Mulish', sans-serif;
+        background: #013880;
+    }
+
+    button {
+        left: 8.5%;
+        width: 10em; padding: 3%;
+        font-family: 'Mulish', sans-serif;
+        color: #ffffff; position: relative;
+        transform: translate(-50%, -50%);
+        background: rgba( 132, 25, 25, 0.90 );
+        backdrop-filter: blur( 5.5px );
+        font-size: 10px; margin: 1em 0 0 2.5em;
+        -webkit-backdrop-filter: blur( 4.5px );
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        box-sizing: border-box; transition: all 1s;
+    }
+
+    button:hover {
+        background: #000000;
+        color: #ffffff;
+        border-radius: 5px;
+        transition: all 1s;
+    }
+
+.form {
+  padding: 10%;
+}
+
+    .login-box {
+        width: 475px;
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        background: #809cc0;
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 5.5px );
+        -webkit-backdrop-filter: blur( 4.5px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+      
+        box-sizing: border-box;
+        box-shadow: 0 5px 10px #c0c0c0;
+        border-radius: 10px;
+    }
+
+
+.card {
+  text-align: center;
+}
+
+.tab1cards {
+  display: flex;
+  flex-direction: row;
+}
+
+.myITS-logo {
+  margin: 0 0 1em 3em;
+}
+
+.myITS-icon {
+  margin: 1.5em 0 0 6em;
+}
+
+
+.i-forgor, .lingua-franca {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.i-forgor {
+  text-align: left;
+  color: #f1f1f1;
+  margin: 0 0 2em 2.9em;
+}
+
+.lingua-franca {
+  text-align: right;
+  color: #f1f1f1;
+  margin: 0 0 2em 12em;
+}
+
+
+    .login-box .user-box {
+          position: relative;
+    }
+
+    .login-box .user-box input {
+        width: 100%; padding: 10px 0;
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #fff;
+        outline: none;
+        background: transparent;
+    }
+    
+    .login-box .user-box label {
+        padding: 10px 0;
+        position: absolute;
+        top:0; left: 0;
+        font-size: 1rem;
+        color: #f1c40f;
+        pointer-events: none;
+        transition: .5s;
+    }
+
+    .login-box .user-box input:focus ~ label,
+    .login-box .user-box input:valid ~ label {
+        top: -20px; left: 0;
+        color: #013880;
+        font-size: 12px;
+    }
+
+    .login-box form a {
+        background: #f1c40f;
+        padding: 10px 20px;
+        position: relative;
+        display: inline-block;
+        color: #013880;
+        font-size: .75rem;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        text-align: center;
+        transition: .5s;
+        margin: 2em auto;
+        width: 89%; height: 1.5em;
+        border-radius: .5em;
+        transition: all 1s ease-out;
+    }
+
+
+.login-box form a:hover {
+  transition: all 1s ease-out;
+  background: #013880;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+@media only screen and (max-width: 50em) {
+  
+  .login-box {
+    width: 90%;
+  }
+  
+  .myITS-logo {
+    width: 7%;
+    margin: auto;
+  }
+  
+  .myITS-icon {
+    width: 7%;
+  }
+  
+}
